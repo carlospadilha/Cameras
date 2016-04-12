@@ -1,0 +1,81 @@
+.cam, .lampDes, .lampLig, .portao{
+	/*border:1px dotted #333;*/ border-radius:8px;
+	color:#AAA;
+	-webkit-transition:all 0.3s; -moz-transition:all 0.3s;
+	/*-webkit-filter:grayscale(100%); -moz-filter:grayscale(100%);*/
+}
+.cam.hover, .cam:active, .cam.on, .lampLig:active, .lampLig.hover, .lampDes:active, .lampDes.hover, .portao.hover{
+	box-shadow:0px 0px 0px 2pt #5AF;
+	color:#5AF;
+	/*-webkit-filter:none; -moz-filter:none;*/
+}
+/*------ botão câmera ------*/
+.cam{
+	background: url('../img/cam_66x90_on.png') no-repeat,
+		-webkit-linear-gradient(340deg, rgba(200,200,200,0.3), rgba(0,0,0,0) 30%), -webkit-linear-gradient(135deg, rgba(200,200,200,0.3), rgba(0,0,0,0) 30%);
+	background: url('../img/cam_66x90_on.png') no-repeat,
+		-moz-linear-gradient(345deg, rgba(200,200,200,0.4), rgba(0,0,0,0) 40%), -moz-linear-gradient(135deg, rgba(200,200,200,0.4), rgba(0,0,0,0) 40%);
+	font-size:18px; font-family:Arial; font-weight:normal; text-align:center;
+	position:absolute;
+	width:66px; height:90px;
+}
+.cam:active, .cam.on{
+	background: url('../img/cam_66x90.png') no-repeat,
+		-webkit-linear-gradient(340deg, rgba(200,200,200,0.3), rgba(0,0,0,0) 30%), -webkit-linear-gradient(135deg, rgba(200,200,200,0.3), rgba(0,0,0,0) 30%);
+	background: url('../img/cam_66x90.png') no-repeat,
+		-moz-linear-gradient(345deg, rgba(200,200,200,0.4), rgba(0,0,0,0) 40%), -moz-linear-gradient(135deg, rgba(200,200,200,0.4), rgba(0,0,0,0) 40%);
+}
+/*------ botão lâmpada -----*/
+.lampDes, .lampLig{
+	width:77px; height:100px;
+	-moz-transition:all 0.8s ease-in-out; -webkit-transition:all 0.8s ease-in-out; transition:all 0.8s ease-in-out;
+}
+.lampDes{
+	background: url('../img/lamp_off_70x100.png') no-repeat,
+		-webkit-linear-gradient(340deg, rgba(200,200,200,0.3), rgba(0,0,0,0) 30%), -webkit-linear-gradient(135deg, rgba(200,200,200,0.3), rgba(0,0,0,0) 30%);
+	background: url('../img/lamp_off_70x100.png') no-repeat,
+		-moz-linear-gradient(345deg, rgba(200,200,200,0.4), rgba(0,0,0,0) 40%), -moz-linear-gradient(135deg, rgba(200,200,200,0.4), rgba(0,0,0,0) 40%);
+}
+.lampLig, .lampDes.on{
+	background: url('../img/lamp_on_70x100.png') no-repeat,
+		-webkit-linear-gradient(340deg, rgba(200,200,200,0.3), rgba(0,0,0,0) 30%), -webkit-linear-gradient(135deg, rgba(200,200,200,0.3), rgba(0,0,0,0) 30%);
+	background: url('../img/lamp_on_70x100.png') no-repeat,
+		-moz-linear-gradient(345deg, rgba(200,200,200,0.4), rgba(0,0,0,0) 40%), -moz-linear-gradient(135deg, rgba(200,200,200,0.4), rgba(0,0,0,0) 40%);
+}
+/*--------------------------*/
+.portao{
+	background: url('../img/gate_i.png') no-repeat,
+		-webkit-linear-gradient(340deg, rgba(200,200,200,0.3), rgba(0,0,0,0) 30%), -webkit-linear-gradient(135deg, rgba(200,200,200,0.3), rgba(0,0,0,0) 30%);
+	background: url('../img/gate_i.png') no-repeat,
+		-moz-linear-gradient(345deg, rgba(200,200,200,0.4), rgba(0,0,0,0) 40%), -moz-linear-gradient(135deg, rgba(200,200,200,0.4), rgba(0,0,0,0) 40%);
+	width:97px; height:55px;
+}
+.portao:active, .portao.on{
+	background: url('../img/gate_i_on.png') no-repeat,
+		-webkit-linear-gradient(340deg, rgba(200,200,200,0.3), rgba(0,0,0,0) 30%), -webkit-linear-gradient(135deg, rgba(200,200,200,0.3), rgba(0,0,0,0) 30%);
+	background: url('../img/gate_i_on.png') no-repeat,
+		-moz-linear-gradient(345deg, rgba(200,200,200,0.4), rgba(0,0,0,0) 40%), -moz-linear-gradient(135deg, rgba(200,200,200,0.4), rgba(0,0,0,0) 40%);
+	border:1px solid #5AF;
+}
+/*- usado em navigation-cam -*/
+.sweep.on{
+	width:630px; height:370px;
+}
+/*-------- image flip -------*/
+.imgFlip.on{
+	-webkit-transform:scale(-1,-1); -moz-transform:scale(-1,-1); transform:scale(-1,-1);
+/*	-webkit-transform:scaleY(-1); -moz-transform:scaleY(-1); transform:scaleY(-1);*/
+}
+
+
+/*Filter styles*/
+/*
+.saturate {-webkit-filter: saturate(3);}
+.grayscale {-webkit-filter: grayscale(100%);}
+.contrast {-webkit-filter: contrast(160%);}
+.brightness {-webkit-filter: brightness(0.25);}
+.blur {-webkit-filter: blur(3px);}
+.invert {-webkit-filter: invert(100%);}
+.sepia {-webkit-filter: sepia(100%);}
+.huerotate {-webkit-filter: hue-rotate(180deg);}
+.opacity {-webkit-filter: opacity(50%);}*/

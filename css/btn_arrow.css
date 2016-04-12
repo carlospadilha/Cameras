@@ -1,0 +1,62 @@
+.arrowl, .arrowr, .arrowu, .arrowd, .arrowlm, .arrowrm, .arrowum, .arrowdm{
+	background-repeat:no-repeat;
+	display:block;
+}
+/*== cam navigation =*/
+.arrowl{
+	background-image:url('../img/btn_arrowL_off.png');
+	width:50px;height:86px;
+}
+.arrowl:active{
+	background-image:url('../img/btn_arrowL_on.png');
+}
+.arrowr{
+	background-image:url('../img/btn_arrowR_off.png');
+	width:50px;height:86px;
+}
+.arrowr:active{
+	background-image:url('../img/btn_arrowR_on.png');
+}
+.arrowu{
+	background-image:url('../img/btn_arrowU_off.png');
+	width:86px;height:50px;
+}
+.arrowu:active{
+	background-image:url('../img/btn_arrowU_on.png');
+}
+.arrowd{
+	background-image:url('../img/btn_arrowD_off.png');
+	width:86px;height:50px;
+}
+.arrowd:active{
+	background-image:url('../img/btn_arrowD_on.png');
+}
+/*== arrow navigation mobile =*/
+.arrowlm{
+	background-image:url('../img/arrow-5-left_40.png');
+	width:50px;height:86px;
+}
+.arrowlm:active{
+	background-image:url('../img/arrow-5-left.png');
+}
+.arrowrm{
+	background-image:url('../img/arrow-5-right_40.png');
+	width:50px;height:86px;
+}
+.arrowrm:active{
+	background-image:url('../img/arrow-5-right.png');
+}
+.arrowum{
+	background-image:url('../img/arrow-5-up_40.png');
+	width:86px;height:50px;
+}
+.arrowum:active{
+	background-image:url('../img/arrow-5-up.png');
+}
+.arrowdm{
+	background-image:url('../img/arrow-5-down_40.png');
+	width:86px;height:50px;
+}
+.arrowdm:active{
+	background-image:url('../img/arrow-5-down.png');
+}

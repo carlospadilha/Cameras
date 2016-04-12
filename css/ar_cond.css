@@ -1,0 +1,50 @@
+.arcond{
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(5%, #1A2328), color-stop(50%, #323C46), color-stop(100%, #1A2328));
+	background:-moz-linear-gradient(center top, #1A2328 5%, #323C46 50%, #1A2328 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1A2328', endColorstr='#323C46');
+	background-color:#1A2328;
+	font-family:Arial; color:white;
+}
+/*==================================*/
+.arrowle, .arrowri, .arrowup, .arrowdo, .btn_ok{
+	background-repeat:no-repeat;
+	display:block;
+	text-align:center;text-decoration:none;color:blue;font-weight:bold;
+	line-height:11px;
+	position:absolute;
+}
+.arrowle{
+	background-image:url('../img/btn_arrowleft_cinza_off.png');
+	width:59px;height:133px;	
+}
+.arrowle:active, .arrowle:hover{
+	background-image:url('../img/btn_arrowleft_on.png');
+}
+.arrowri{
+	background-image:url('../img/btn_arrowright_cinza_off.png');
+	width:59px;height:133px;	
+}
+.arrowri:active, .arrowri:hover{
+	background-image:url('../img/btn_arrowright_on.png');
+}
+.arrowup{
+	background-image:url('../img/btn_arrowup_cinza_off.png');
+	width:133px;height:59px;
+}
+.arrowup:active, .arrowup:hover{
+	background-image:url('../img/btn_arrowup_on.png');
+}
+.arrowdo{
+	background-image:url('../img/btn_arrowdown_cinza_off.png');
+	width:133px;height:59px;
+}
+.arrowdo:active, .arrowdo:hover{
+	background-image:url('../img/btn_arrowdown_on.png');
+}
+.btn_ok{
+	background-image:url('../img/btn_rnd_blue_off.png');
+	width:86px;height:86px;
+}
+.btn_ok:active, .btn_ok:hover{
+	background-image:url('../img/btn_rnd_blue.png');
+}

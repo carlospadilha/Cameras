@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="AbstractShare.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="Connection.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="ErrorCodes.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="FileInfo.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="IFileInfo.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="IShare.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="NativeFileInfo.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="NativeServer.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="NativeShare.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="NativeState.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="NativeStream.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="Parser.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="RawConnection.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="Server.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="Share.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="showShares.php" server="192.168.1.31//" local="131032342491232857" remote="131048997000000000" Dst="1" />
+<file name="System.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="TimeZoneProvider.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="exemplo.php" server="192.168.1.31//" local="131032373647574898" remote="131048997000000000" Dst="1" />
+<file name="smbclient.php" server="192.168.1.31//" local="131032341729729302" remote="131048997000000000" Dst="1" />
+<file name="AbstractShare.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="Connection.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="ErrorCodes.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="exemplo.php" server="192.168.1.24:2121" local="131032373647574898" remote="131048998200000000" Dst="1" />
+<file name="smbclient.php" server="192.168.1.24:2121" local="131032341729729302" remote="131048998200000000" Dst="1" />
+<file name="FileInfo.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="IFileInfo.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="IShare.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="NativeFileInfo.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="NativeServer.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="NativeShare.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="NativeState.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="NativeStream.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="Parser.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="RawConnection.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="Server.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="Share.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="showShares.php" server="192.168.1.24:2121" local="131032342491232857" remote="131048998200000000" Dst="1" />
+<file name="System.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="TimeZoneProvider.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+</dwsync>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="AccessDeniedException.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="AlreadyExistsException.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="AuthenticationException.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="ConnectException.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="ConnectionException.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="ConnectionRefusedException.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="Exception.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="FileInUseException.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="ForbiddenException.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="HostDownException.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="InvalidHostException.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="InvalidPathException.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="InvalidRequestException.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="InvalidResourceException.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="InvalidTypeException.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="NoLoginServerException.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="NoRouteToHostException.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="NotEmptyException.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="NotFoundException.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="TimedOutException.php" server="192.168.1.31//" local="131026805980000000" remote="131048997000000000" Dst="1" />
+<file name="AccessDeniedException.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="AlreadyExistsException.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="AuthenticationException.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="ConnectException.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="ConnectionException.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="Exception.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="ConnectionRefusedException.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="FileInUseException.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="ForbiddenException.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="HostDownException.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="InvalidHostException.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="InvalidPathException.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="InvalidRequestException.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="InvalidResourceException.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="InvalidTypeException.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="NoLoginServerException.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="NoRouteToHostException.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="NotFoundException.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="NotEmptyException.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+<file name="TimedOutException.php" server="192.168.1.24:2121" local="131026805980000000" remote="131048998200000000" Dst="1" />
+</dwsync>

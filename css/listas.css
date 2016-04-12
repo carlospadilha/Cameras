@@ -1,0 +1,308 @@
+.lista01, .lista04, .listaLetra, .listaMenu, .listaVideo, .listaMusic, .listaSinopse, .listaTxt, .playlist{
+	overflow:auto;
+	font-family:Verdana, Geneva, sans-serif; font-size:17px; font-weight:normal;
+}
+/*.listaVideo{
+	font-family:Verdana, Geneva, sans-serif; font-size:17px; font-weight:normal;
+}*/
+.lista01 li a, .lista03 li a, .lista04 li a, .listaLetra li a, .listaMusic li a, .listaLetraVideo li a, .listaMenu li a, .listaSinopse li a, .listaTxt li a, .playlist li a{
+	color:white; text-decoration:none;
+}
+.listaLetra a, .listaLetraVideo a, .listaMenu a{	/* todo fundo sensível ao toque */
+    display:inline-block; /* support vertical-align */
+    width:100%;
+}
+.listaMusic li div, .listaVideo li div{
+	overflow:hidden; /* Da da da das war die newe.... estoura */
+	/*display:inline-block;*/
+	color:white;
+}
+/*======================= XBMC_ITEM_FILES ===========================*/
+/*.item_selected{
+	border:1px solid #5AF; border-radius:4px;
+	background-color:rgba(34,85,136,0.7);
+}*/
+/*=======================*/
+.lista01, .lista04{
+	overflow-x:hidden;
+	white-space:nowrap;
+}
+.lista01 li, .lista04 li{	
+	margin-left:8px;/* margin-top:2px; desloca 2 pxs quando remove linhas */
+	overflow:hidden;
+	line-height:37px;
+}
+.lista01 li img, .lista04 li img{
+	margin-left:0;
+	width:35px; height:35px;
+	vertical-align:middle;
+}
+.lista01 li a{
+	vertical-align:middle;
+}
+/*======================== navigation menu ==========================*/
+.lista02, .lista02small{
+	overflow:hidden;
+	font-family:Arial; font-weight:bold; font-size:11px; text-align:center; color:#888
+}
+.lista02 li a, .lista02small li a{
+	float:left;
+	width:50px; height:50px;
+	border:1px solid #555; border-radius:4px;
+}
+.lista02 li a.hover, .lista02 li a.on, .lista02small li a.hover, .lista02small li a.on{
+	border:1px solid #5AF; border-radius:4px;
+	color:#5AF;
+}
+.lista02 li p, .lista02small li p{
+	float:left;
+	width:50px; height:50px;
+}
+.lista02, .lista02small, .lista2cover{
+	height:61px;
+	border:2px solid #555; border-top-right-radius:3em; border-bottom-right-radius:3em;
+}
+.lista02, .lista02small{
+	background:-webkit-linear-gradient(270deg, rgba(200,200,200,0.4), rgba(0,0,0,0.6) 50%);
+	background:-moz-linear-gradient(270deg, rgba(200,200,200,0.5), rgba(0,0,0,0.7) 50%);
+}
+.lista02 li a div, .lista02small li a div{
+	margin-top:38px;
+}
+.lista02{
+	margin-left:5px;
+	width:758px; /*era 690*/
+}
+.lista02 li{
+	margin-left:17px; margin-top:4px;
+	float:left;
+	width:50px;
+}
+.lista02small{
+	margin-left:1px;
+	width:380px;
+}
+.lista02small li{
+	margin-left:8px; margin-top:4px;
+	float:left;
+	width:50px;
+}
+.lista2cover{
+	width:60px;
+	background:-webkit-linear-gradient(270deg, rgba(200,200,200,0.9), rgba(0,0,0,0.9) 50%);
+	background:-moz-linear-gradient(270deg, rgba(200,200,200,0.9), rgba(0,0,0,0.9) 50%);
+	text-align:center; color:#888; line-height:55px;
+}
+/*======================= Log de xbmcip.html=========================*/
+.lista03{
+	overflow:auto;
+	overflow-x:hidden;
+	white-space:nowrap;
+	/*line-height:20px;*/
+}
+.lista03 li{
+	margin-left:1px; margin-top:1px;
+	overflow:hidden;
+	background:rgba(0,0,0,0.1);
+	width:400px;height:25px;
+}
+.lista03 li img{
+	width:20px; height:20px;
+}
+.lista03 li a{
+	margin-left:2px;
+	list-style-type:none;
+	font-family:"Lucida Console", Monaco, monospace; font-size:15px; font-weight:normal;
+}
+.lista03 li a img:hover{
+	/*margin-top:4px;*/
+	border-radius:2px;
+	box-shadow:0 0 1px 1px #5AF;
+}
+/*============================ arquivos =============================*/
+.lista04 li{	
+	width:480px;
+}
+.lista04 li:hover{		/* highlight borda azul (linha) */
+	border-radius:2px;
+	box-shadow:0 0 1px 1px #5AF;
+}
+.lista04 li img:hover{	/* highlight borda cinza (imagem blank) */
+/*	border-radius:2px;
+	box-shadow:0 0 1px 1px #48D;*/
+}
+.imgPath, .imgPath2{
+	width:35px;/* height:35px;*/
+}
+.blankLine{
+	height:35px;
+}
+.imgPath, .imgPath2, .blankLine{
+	position:absolute;
+}
+/*========================== lista-letras =========================*/
+.listaLetra{
+	overflow-x:hidden; overflow-y:hidden;
+	line-height:30px;
+	height:450px;
+	padding:0;
+}
+.listaLetra li{
+	width:25px;
+	border:1px solid #555
+}
+.listaLetra li a{
+	text-align:center;
+}
+/*===================== lista-letras Vídeo =========================*/
+.listaLetraVideo{
+	background-color:rgba(0,0,0,0.5);
+	overflow:auto; overflow-x:hidden; overflow-y:hidden;
+	font-family:Arial; font-size:17px; font-weight:normal;
+	line-height:30px;
+	width:900px;
+	padding:0; /* remova "bullets" */
+}
+.listaLetraVideo li{
+	margin-left:1px;
+	width:33px;
+	display:table-cell;	/* isto é super importante para "horizontal scrolling" */
+	border:1px solid #555;
+}
+.listaLetraVideo li a{
+	text-align:center;
+	/*padding-left:8px;*/	/* padding no lugar de margin, desloca texto mas não o anchor element */
+}
+/*===================== lista menuExplorer (video) =====================*/
+.listaMenu{
+	overflow-x:hidden;
+	white-space:nowrap;
+}
+.listaMenu li{	
+	margin-left:3px; margin-top:2px;
+	overflow:hidden;
+	line-height:28px;
+}
+/*======================= XBMC Lista Capas de Musica ====================*/
+.listaMusic, .listaVideo{
+	overflow-y:hidden;
+}
+.listaMusic li, .listaVideo li{
+	/*float:left;*/			/* isto é super importante para horizontal scrolling - versão 2015*/
+	display:table-cell; 	/* isto é super importante para horizontal scrolling - versão 2014*/
+	background-color:rgba(0,0,0,0.6);
+}
+.listaMusic{
+	width:936px; height:670px;
+}
+.listaMusic li{
+	width:130px; height:640px;
+}
+/*.listaMusic.tab{
+	width:872px; height:504px;
+}
+.listaMusic.tab li{	
+	width:130px; height:475px;
+}*/
+.listaMusic li img{
+	margin-left:3px;/* margin-top:0;*/
+	width:125px; height:125px;
+}
+.listaMusic li div{
+	margin-left:3px;
+	width:125px; height:35px;
+}
+/*======= XBMC Lista Capas de Video =======*/
+.listaVideo{
+	width:1024px; height:238px;
+}
+.listaVideo li{
+	border:1px solid black;
+	width:150px; height:232px;
+}
+.listaVideo li img{
+	/*margin-left:1px; margin-top:0;*/
+	width:146px; height:192px;
+}
+.listaVideo li div{
+	/*margin-left:1px; margin-botton:0;*/
+	width:146px; height:32px;
+}
+/*================= lista sinopse (video) e texto ====================*/
+.listaSinopse{
+	width:370px; height:238px;
+}
+.listaTxt{
+	width:580px; height:400px;
+}
+.listaSinopse, .listaTxt{
+	overflow-x:hidden;
+	line-height:22px;
+}
+.listaSinopse li a, .listaTxt li a{
+	margin-left:0; margin-top:0;
+}
+/*====================== smooth list scroll =========================*/
+.scrollable{
+/*	overflow-y:scroll;
+	overflow-x:hidden;*/
+	-webkit-overflow-scrolling:touch;
+	-webkit-box-flex:1;
+}
+/*============================ PLAYLIST =============================*/
+.playlist{
+	overflow-x:hidden;
+	white-space:nowrap;
+	line-height:35px;
+}
+.playlist li {
+	margin-left:12px; margin-top:3px;
+	overflow:hidden;
+}
+.playlist li img{
+	margin-left:3px; margin-top:1px;
+	width:35px; height:35px;
+	vertical-align:middle;
+}
+.playlist li a{
+	margin-left:5px; margin-top:0;
+	list-style-type:none;
+	vertical-align:middle;
+}
+/*=================== Evidencia letra selecionada ====================*/
+.selLetra{
+	font-weight:bold;
+	background-color:green;
+}
+/*==================== necessário para iscroll.js ====================*/
+#wrapper{
+	position: relative;
+	width: 1024px;
+	height: 238px;
+	overflow: hidden;
+
+	/* Prevent native touch events on Windows */
+	-ms-touch-action: none;
+
+	/* Prevent the callout on tap-hold and text selection */
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+
+	/* Prevent text resize on orientation change, useful for web-apps */
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	text-size-adjust: none;
+}
+#scroller{
+	position: absolute;
+	width: 200000px;
+	/* Prevent elements to be highlighted on tap */
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+
+	/* Put the scroller into the HW Compositing layer right from the start */
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	transform: translateZ(0);
+}

@@ -1,0 +1,129 @@
+.music, .video, .cancel, .btn_explorer, .explorer_up, .mute, .ac_powerOn, .xcancel, .Xcancel, .btn_search, .btn_refresh, .btn_playlist, .btn_plylst, .btn_memolist, .hand{
+	background-repeat:no-repeat;
+	display:block;
+	text-decoration:none; color:#CCC;
+}
+.btn_explorer, .btn_playlist, .btn_memolist, .btn_search, .hand, .mute, .btn_refresh{
+	border:1px solid #555; border-radius:7px;	
+	font-size:15px
+}
+.btn_explorer, .btn_playlist, .btn_memolist, .btn_search, .hand{
+	width:70px; height:75px;
+	background-position:center bottom
+}
+.btn_explorer:active, .btn_explorer.hover, .mute:active, .mute.on, .mute.hover, .btn_search:active, .btn_search.hover,
+.btn_search.on, .btn_playlist:active, .btn_memolist:active, .btn_playlist.on, .btn_memolist.on, .btn_playlist.hover, .btn_memolist.hover, .hand:active, .hand:hover{
+	border:1px solid #5AF; border-radius:7px;
+}
+/*================================*/
+.music{
+	background-image:url('../img/menu_music.png');
+	width:227px; height:259px
+}
+.music:active, .music.hover{
+	background-image:url('../img/menu_music_pressed.png')
+}
+/*================================*/
+.video{
+	background-image:url('../img/menu_movies.png');
+	width:227px; height:259px
+}
+.video:active, .video.hover{
+	background-image:url('../img/menu_movies_pressed.png')
+}
+/*================================*/
+.cancel{
+	background-image:url('../img/btn_close_off.png');
+	width:49px; height:39px
+}
+.cancel:active, .cancel:hover, .cancel.on{
+	background-image:url('../img/btn_close_on.png')
+}
+/*================================*/
+.btn_explorer{
+	background-image:url('../img/folder.png')
+}
+.btn_explorer:active, .btn_explorer.hover{
+	background-image:url('../img/folder_on.png')
+}
+/*================================*/
+.explorer_up{
+	background-image:url('../img/open_48.png');
+	width:49px; height:39px
+}
+.explorer_up:active, .explorer_up.hover, .explorer_up.on{
+	background-image:url('../img/open_48 pressed.png')
+}
+/*================================*/
+.mute{
+	background-image:url('../img/pausa_55x53_off.png');
+	width:55px; height:55px
+}
+.mute:active, .mute.on{
+	position:relative; top:6px;
+	background-image:url('../img/pausa_55x53_on.png')
+}
+/*================================*/
+.ac_powerOn{
+	background-image:url('../img/Power On Blue.png');
+	width:70px; height:70px
+}
+.ac_powerOn:active, .ac_powerOn.hover{
+	background-image:url('../img/Power On Blue invertido.png')
+}
+/*================================*/
+.xcancel, .Xcancel{
+	background-image:url('../img/delete_48.png');
+	width:48px; height:48px;
+	position:absolute; left:970px; top:700px
+}
+.xcancel:active, .xcancel:hover, .Xcancel:active, .Xcancel:hover{
+	background-image:url('../img/delete_48 pressed.png')
+}
+/*================================*/
+.btn_search{
+	background-image:url('../img/search_60x60.png');
+}
+.btn_search:active, .btn_search.hover, .btn_search.on{
+	background-image:url('../img/search_on_60x60.png')
+}
+/*================================*/
+.btn_refresh{
+	background-image:url('../img/redo.png');
+	width:30px; height:26px
+}
+.btn_refresh:active, .btn_refresh.on{
+	background-image:url('../img/redo_invertido.png')
+}
+/*================================*/
+.btn_playlist, .btn_plylst{
+	background-image:url('../img/disc_60.png')
+}
+.btn_playlist:active, .btn_playlist.on, .btn_playlist.hover, .btn_plylst:active, .btn_plylst.on, .btn_plylst.hover{
+	background-image:url('../img/disc_60_on.png')
+}
+.btn_memolist{
+	background-image:url(/img/disc_60_blue.png)
+}
+.btn_memolist:active, .btn_memolist.on, .btn_memolist.hover{
+	background-image:url(/img/disc_60_blue_on.png)
+}
+/*================================*/
+.btn_plylst{
+	width:53px; height:53px
+}
+/*======== mouse pointer ========*/
+.hand{
+	background-image:url('../img/hand_60x60.png')
+}
+.hand:active, .hand:hover{
+	background-image:url('../img/hand_on_60x60.png')
+}
+/*========= efeito bounce ========*/
+.pop.on, .pop.on1, .pop.on2, .pop.on3{
+	-webkit-transition:all 0.15s ease-in-out; -moz-transition:all 0.12s ease-in-out;
+}
+.pop.on{transform:scale(0.8); -webkit-transform:scale(0.8); -moz-transform:scale(0.8)}
+.pop.on1{transform:scale(1.5); -webkit-transform:scale(1.5); -moz-transform:scale(1.5)}
+.pop.on2{transform:scale(1.2); -webkit-transform:scale(1.2); -moz-transform:scale(1.2)}
+.pop.on3{transform:scale(0.95); -webkit-transform:scale(0.95); -moz-transform:scale(0.95)}
