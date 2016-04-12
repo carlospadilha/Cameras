@@ -1,0 +1,1 @@
+{"releStatus":"6C0024","IP":"kaizen.dyndns-wiki.com","WAN":false,"xbmcIP":"192.168.1.31","sysname":"NUC","mac":"_C0_3F_D5_66_E8_9C"}

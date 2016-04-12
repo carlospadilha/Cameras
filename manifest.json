@@ -1,0 +1,30 @@
+{
+  "name": "clp_app",
+  "version": "2.1",
+  "manifest_version": 2,
+  "minimum_chrome_version": "33.0.1715.0",
+  "short_name": "clp_app",
+  "description": "",
+
+  "icons": {
+	"16": "img/menu_xbmc_on.png",
+	"128": "img/menu_xbmc_on.png"
+  },
+
+  "app": {
+	"background": {
+		"scripts": ["background.js"]
+    }
+  },
+
+  "sockets": {
+	"udp": { "bind": "*", "send": "*" },
+	"tcp": { "connect": "*:*" }
+  },
+
+  "permissions": [
+	"<all_urls>",
+	"storage",
+	{ "fileSystem": ["write"] }
+  ]
+}

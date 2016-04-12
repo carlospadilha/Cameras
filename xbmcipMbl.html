@@ -1,0 +1,508 @@
+<!doctype html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"><!--desabilita zoom no ipad-->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />	<!--status-bar fundo preto-transparente-->
+
+	<link rel="stylesheet" href="css/carlos01.css"/>
+	<link rel="stylesheet" href="css/carlos01-codes.css"/>
+	<link rel="stylesheet" href="css/carlos01-embedded.css"/>
+	<link rel="stylesheet" href="css/carlos01-animation.css"/>
+	<link rel="stylesheet" href="css/listas.css"/>
+	<link rel="stylesheet" href="css/transition.css"/>
+	<link rel="stylesheet" href="css/btn.css">
+	<link rel="stylesheet" href="css/led.css">
+	<link rel="stylesheet" href="css/btn_arrow.css">
+	<link rel="stylesheet" href="css/btn_3d_2.css">
+	<link rel="stylesheet" href="css/ar_cond.css"/>
+	<link rel="stylesheet" href="css/inout.css"/>
+	<link rel="stylesheet" href="css/btn_cam.css">
+	<link rel="stylesheet" href="css/loading.css"/>
+	<link rel="stylesheet" href="css/btn_xbmc.css"/>
+	<link rel="stylesheet" href="css/xbmc_transport.css"/>
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<!--<link rel="stylesheet" href="css/xbmc_sliders.css">-->
+	<link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="css/navigationMenu.css">
+	<link rel="stylesheet" href="css/fundos.css"/>
+
+	<script src="script/jquery_1_12_1.min.js"></script>
+	<script src="script/slider.js"></script>
+	<script src="script/jquery.carlos.js"></script>
+	<script src="script/set_sml.js"></script>
+	<script src="script/btn.js"></script>
+	<script src="script/files.js"></script>
+	<script src="script/cp_gerais.js"></script>
+	<script src="script/setup.js"></script>
+	<script src="script/cam.js"></script>
+	<script src="script/ir_codes.js"></script>
+	<script src="script/rfx9600.js"></script>
+	<script src="script/rs232tcp.js"></script>
+	<script src="script/ipcontrol.js"></script>
+	<script src="script/arcond.js"></script>
+	<script src="script/xbmcsearch.js"></script>
+	<script src="script/xbmcip.js"></script>
+	<script src="script/xbmc.js"></script>
+	<script src="script/xbmcfiles.js"></script>
+	<script src="script/xbmcplaylist.js"></script>
+	<script src="script/efeitos.js"></script>
+	<!--<script src="script/ios.js"></script>-->
+	<script src="script/spin.min.js"></script> <!--usado para "loading" -->
+	<script src="script/audioApi.js"></script>
+
+	<title>XBMC PAGES</title>
+</head>
+<body>
+<div id="corpo" class="corpo_pagina_mbl">
+
+
+
+
+
+<!--##################################################################### cam ######################################################################-->
+
+
+
+
+
+<div id="camMblPage">
+	<!--============================ imagem cam. e fundo =============================-->
+	<div id="rstImg" style="position:absolute;left:1px">
+		<img id="camImg"  class="fndPag" src="#" alt="">
+		<img id="camImg1" class="fndPag" src="#" alt="" style="width:197px;height:149px">
+		<img id="camImg2" class="fndPag abs" src="#" alt="" style="left:197px;top:0;width:197px;height:149px">
+		<img id="camImg3" class="fndPag imgFlip abs" src="#" alt="">
+		<video id="vidCam" class="fndPag" src="#" autoplay controls preload="none" style="position:absolute"></video>
+	</div>
+
+	<!--=========================== mostra vídeo gravado =============================-->
+	<div id="video-preview" style="position:absolute;left:253px;top:3px">
+		<span id="elasped-time"></span>
+	</div>
+
+	<!--========================= loading (spin.min.js) ==============================-->
+	<div id="camLoading" style="position:absolute;left:200px;top:155px"></div>
+	<div id="camLoading1" style="position:absolute;left:100px;top:75px"></div>
+	<div id="camLoading2" style="position:absolute;left:300px;top:75px"></div>
+	<div id="camLoading3" style="position:absolute;left:130px;top:225px"></div>
+	<div id="camLoading4"></div>
+	<script src="script/loading.js"></script>
+
+	<!--================== cam navigation up/down/left/right =========================-->
+	<div id="swpCam" class="p0" style="width:400px;height:300px">
+	  <div style="position:absolute;left:120px;top:100px">
+		<img id="arrowUs" src="img/arrow-5-up_w.png" alt="" style="position:absolute;left:50px;top:0px">
+		<img id="arrowRs" src="img/arrow-5-right_w.png" alt="" style="position:absolute;left:135px;top:50px">
+		<img id="arrowDs" src="img/arrow-5-down_w.png" alt="" style="position:absolute;left:50px;top:135px">
+		<img id="arrowLs" src="img/arrow-5-left_w.png" alt="" style="position:absolute;left:0px;top:50px">
+	  </div>
+	</div>
+
+	<!--================================= botões CAM =================================-->
+	<div style="position:absolute;left:0px;top:290px">
+		<div class="cam" id="cam1" style=""><br><br><br><br>CAM 1</div>
+		<div class="cam" id="cam2" style="left:82px;top:0px"><br><br><br><br>CAM 2</div>
+		<div class="cam" id="cam3" style="left:164px"><br><br><br><br>CAM 3</div>
+		<div class="cam" id="cam5" style="left:246px"><br><br><br><br>CAM 5</div>
+		<div class="cam" id="cam0" style="left:328px"><br><br><br><br>Todas</div>
+		<div id="cam4"></div>
+		<div id="camx"></div>
+		<div id="s1701" style="position:absolute;left:160px;top:90px;width:100px"></div>
+	</div>
+
+	<!--============================ botões 1 a 10 Cam 3 =============================-->
+	<div id ="botCam3" style="position:absolute;left:190px;top:400px">
+		<div id="m1" class="btn2 abs">1</div>
+		<div id="m2" class="btn2 abs" style="top:0;left:52px">2</div>
+		<div id="m3" class="btn2 abs" style="top:0;left:104px">3</div>
+		<div id="m4" class="btn2 abs" style="top:0;left:156px">4</div>
+		<div id="m5" class="btn2 abs" style="top:44px">5</div>
+		<div id="m6" class="btn2 abs" style="top:44px;left:52px">6</div>
+		<div id="ms" class="btn2 abs" style="top:44px;left:104px">S</div>
+		<div id="md" class="btn2 abs" style="top:44px;left:156px">D</div>
+		<div id="lmpLig" class="lampDes abs" style="left:7px;top:92px"></div>
+		<div id="gate" class="portao abs" style="left:100px;top:100px"></div>
+	</div>
+
+	<!--================= botões lâmpada da frente, portão, Mov. Lento e Rápido Cam 1 ===================-->
+	<div id ="botCam1" class="abs" style="left:5px;top:395px;width:140px;height:200px">
+		<div id="lampLig" class="lampLig" style="position:absolute;"></div>
+		<div id="lampDes" class="lampDes" style="position:absolute;left:80px"></div>
+	</div>
+</div>
+
+
+
+
+
+<!--##################################################################### xbmcip ###################################################################-->
+
+
+
+
+
+<div id="xbmcipMblPage">
+<!--============ botões PROJ., RECVER. E HTPC (liga/desliga) ======================-->
+	<div id="d302" class="fndPag" style="position:absolute;left:5px;top:450px;width:120px;height:140px">
+		<!--<div class="fndPag" style="position:absolute;width:118px;height:138px"></div>-->
+		<div class="zM" style="top:5px"><div id="pcOnOff" class="btnled xM"><i class="icon-off f7"></i><br>HTPC</div><span id="ledOnOff4"></span></div>
+		<div class="zM" style="top:50px"><div id="rcvOnOff" class="btnled xM"><i class="icon-off f7"></i><br>RCVER</div><span id="ledOnOff2"></span></div>
+		<div class="zM" style="top:95px"><div id="projOnOff" class="btnled xM"><i class="icon-off f7"></i><br>PROJ</div><span id="ledOnOff5"></span></div>
+	</div>
+
+<!--================================ lista log ==================================-->
+	<div class="fndPag" style="position:absolute;left:5px;top:90px;width:385px;height:150px">
+		<ul id="l50000" class="lista03 abs" style="left:5px;top:5px;width:380px;height:152px">
+		</ul>
+		<div class="abs" style="left:300px;top:155px">
+			<div id="logClr" class="btn1">limpa</div>
+		</div>
+	</div>
+
+<!--================================ botões IP ==================================-->
+  <div id="ipBtns" class="fndPag abs" style="left:5px;top:280px;width:385px;height:162px"></div>
+  	<!--= Campo IP =-->
+	<pre id="s39" class="fndPag" style="position:absolute;left:5px;top:248px;width:240px;height:24px;line-height:25px"></pre>
+
+<!--====================== botões XBMC ON/OFF e ALL ON/OFF =======================-->
+	<div class="fndPag" style="position:absolute;left:139px;top:455px;width:251px;height:130px"></div>
+	<div style="height:70px">
+		<div style="position:absolute;left:152px;top:465px"><div id="xbmcOn" class="btnled xB"><i class="f7 icon-off"></i><br>XBMC ON</div></div>
+		<div style="position:absolute;left:152px;top:526px"><div id="xbmcOff" class="btnled xB"><i class="f7 icon-off"></i><br>XBMC OFF</div></div>
+		<div style="position:absolute;left:272px;top:465px"><div id="allOn" class="btnled xB"><i class="f7 icon-off"></i><br>ALL ON</div></div>
+		<div style="position:absolute;left:272px;top:526px"><div id="allOff" class="btnled xB"><i class="f7 icon-off"></i><br>ALL OFF</div></div>
+	</div>
+
+<!--==============================================================================-->
+</div>
+
+
+
+
+<!--#################################################################### xbmcmain ##################################################################-->
+
+
+
+
+
+<div id="xbmcmainMblPage">
+<!--================= caixa de texto: título, file, diretor ======================-->
+  <div style="position:absolute;left:4px;top:92px;font-family:Arial;font-size:18px;font-weight:bold;color:yellow;white-space:nowrap;line-height:30px">
+	<div id="titleBox" class="fndPag" style="width:325px;height:67px"></div>
+	<div class="s20001 sM" style="top:0px"></div>
+	<div class="s20000 sM" style="top:42px"></div>
+	<div class="s20010 sM" style="top:21px;color:white;font-weight:normal"></div>
+  </div>
+
+<!--========================== tempos da barra de tempo ==========================-->
+  <div class="abs pl1" style="top:122px;width:405px;height:30px">
+	<div id="timeBar">
+		<img id="timeBar1" src="img/timeIndicator_72x55_90.png" alt="" style="position:absolute;left:72px;top:2px"/>
+		<div id="timeBar2" style="position:absolute;left:82px;top:5px;color:white"></div>
+	</div>
+	<div id="d2408" class="b" style="left:30px;top:70px;width:325px;height:8px;border-radius:8px">
+    	<div id="a112" style="width:320px"></div>
+    </div>
+	<div id="tempos" class="abs" style="left:0px;top:43px;Arial;font-weight:bold">
+		<div id="s20006" class="abs" style="left:0px;top:0px"></div>
+		<div id="s20007" class="abs" style="left:316px;top:0px;width:75px;text-align:right"></div>
+	</div>
+  </div>
+
+<!--============================= botão playlist =================================-->
+  <div id="d39" class="btn_plylst abs" style="left:340px;top:113px">
+	<div id="s9997" class="abs f5 fb" style="left:6px;top:7px;color:black"></div>
+  </div>
+
+<!--====================== fundo rebaixado das listas ============================-->
+  <div class="fndPag" style="position:absolute;left:4px;top:215px;width:388px;height:330px"></div>
+
+<!--======================= lista de fontes (sources) ============================-->
+  <div id="d1302" class="abs" style="left:11px;top:226px">
+	<ul id="l12002" class="lista01 abs" style="left:0px;top:10px;width:380px;height:300px"></ul>
+  </div>
+
+<!--======================= lista de arquivos (files) ============================-->
+	<div id="d1303" class="fndPag abs" style="left:4px;top:215px;width:388px;height:330px">
+		<img id="listLoad" src="img/led_vermelho_18x18.png" class="abs" alt=""/>
+		<div id="d2410" class="abs y f4" style="left:15px;top:10px;width:320px"></div>
+		<ul id="l12005" class="scrollable lista04 abs" style="left:0;top:30px;width:335px;height:295px"></ul>
+		<div class="abs" style="left:335px">
+			<div class="explorer_up"></div>
+			<ul class="listaLetra abs" id="l12006" style="left:0px;top:40px;line-height:21px"></ul>
+			<ul class="listaLetra abs" id="l12008" style="left:27px;top:40px;line-height:21px"></ul>
+		</div>
+	</div>
+
+<!--=========================== botões music e video =============================-->
+  <div id="d30000" class="abs" style="left:20px;top:250px;font-family:Arial;font-size:27px;font-weight:bold;color:#e0e0e0">
+	<div id="d30001" class="pop abs">
+		<div class="fndPag" style="width:165px;height:190px"></div>
+		<div class="video abs" style="left:0;top:0;background-size:170px"></div>
+		<div class="abs" style="left:40px;top:150px">vídeos</div>
+	</div>
+	<div id="d30002" class="pop abs" style="left:190px">
+		<div class="fndPag" style="width:165px;height:190px"></div>
+		<div class="music abs" style="left:0;top:0;background-size:170px"></div>
+		<div class="abs" style="left:30px;top:150px">músicas</div>
+	</div>
+  </div>
+
+<!--================================ playlist ====================================-->
+  <div id="d1304" class="fndPag2 abs" style="left:10px;top:225px;width:375px;height:305px">
+	<div class="plist" style="left:5px">
+		<div id="shufButton" class="btnled"></div>
+	</div>
+	<div class="plist" style="left:86px">
+		<div id="unshufButton" class="btnled">unShuff</div>
+	</div>
+	<div class="plist" style="left:167px">
+		<div id="plylstClear" class="btnled">Clear</div>
+	</div>
+	<div class="plist" style="left:248px">
+		<div id="plylstOpen" class="btnled"></div>
+	</div>
+	<div id="plyClose" class="cancel abs" style="left:330px;top:5px"></div>
+	<div class="scrollable">
+		<ul id="l12007" class="playlist" style="position:absolute;left:1px;top:61px;width:345px;height:240px;font-size:14px">
+		</ul>
+	</div>
+  </div>
+
+<!--=============================== barra de volume ==============================-->
+	<div id="vol">
+		<div style="position:absolute;left:330px;top:220px">
+			<div style="position:absolute;left:5px;top:5px">
+				<div class="mute" id="d48"></div>
+			</div>
+			<img src="img/gauge_v_off.png" alt="" class="abs pl3" style="top:60px;width:45px;height:262px"/>
+			<div id="a114" style="position:absolute;left:20px;top:67px;width:25px;height:248px"></div>
+		</div>
+		<!--= sweep mouse (botão-mão) =-->
+		<div id="btnHand" class="hand pl5" style="top:216px">mouse</div>
+	</div>
+	<div style="position:absolute;left:342px;top:75px">
+		<a id="showVol" href="javascript:showVolBut()" class="btnled" style="width:50px"><i style="font-size:30px;color:white" class="icon-volume-up"></i></a>
+	</div>
+
+<!--========================= botões CL, STOP, PLAY e CF =========================-->
+	<div id="transport" style="position:absolute;left:7px;top:550px;font-weight:bold;line-height:40px">
+		<div id="d37" class="cr" style="position:absolute;left:0px;top:0px"><i class="icon-to-start-alt"></i></div>
+		<div id="d33" class="play" style="position:absolute;left:91px;top:0px"><i class="icon-pause"></i></div>
+		<div id="d35" class="play" style="position:absolute;left:192px;top:0px"><i class="icon-stop"></i></div>
+		<div id="d38" class="cf" style="position:absolute;left:293px;top:0px"><i class="icon-to-end-alt"></i></div>
+	</div>
+
+<!--==============================================================================-->
+	<!--= sweep mouse =-->
+	<div id="swpMouse" class="fndPag2 abs" style="left:4px;top:210px;width:388px;height:382px">
+		<div id="swm" class="abs" style="left:100px;top:120px"></div>
+		<div id="sw"></div>
+		<pre class="abs" style="left:90px;top:95px;width:400px">MOVE       OK         ESC</pre>
+		<div id="mouseClose" class="cancel abs" style="left:335px;top:3px"></div>
+	</div>
+</div>
+
+
+
+
+
+<!--################################################################### xbmcmusic ##################################################################-->
+<div id="xbmcmusicMblPage">
+</div>
+<!--################################################################### xbmcvideo ##################################################################-->
+<div id="xbmcvideoMblPage">
+</div>
+<!--################################################################################################################################################-->
+
+
+
+
+
+
+
+<!--================================ status TCP =================================-->
+	<!--<div id="statTcp" style="position:absolute;left:100px;top:540px">-->
+		<!--<div id="tcpLed" class="led" style="position:absolute;left:100px;top:540px"></div><span></span><div id="tcpStatus" style="position:absolute;left:-5px;top:10px">TCP</div>-->
+	<!--</div>-->
+ <!--========================= loading (spin.min.js) ==============================-->
+	<div id="d1305" class="abs">
+		<div id="m116" class="abs f5 grey" style="left:-100px;top:-100px;width:200px;height:20px"></div>
+        <div id="f116" class="b0" style="left:-99px;top:-80px;width:200px;height:8px">
+        	<div id="a116" style="width:200px"></div>
+        </div>
+    </div>
+ 
+<!--============================- navigation menu ================================-->
+	<div class="axis" id="d1311" style="position:absolute;left:0px;top:20px">
+		<ul id="navBox" class="object move-leftSmall lista02small">
+			<li><a id="d8"  class="naviCam"><div>cam</div></a></li>
+			<li><a id="d9"  class="naviInout"><div>IN/OUT</div></a></li>
+			<li><a id="d14" class="naviClima"><div>clima</div></a></li>
+			<li><a id="d10" class="naviIp"><div>XBMC</div></a></li>
+			<li><a id="d13" class="naviFil"><div>arquiv</div></a></li>
+			<li><p id="d7"  class="naviFlip"></p></li>
+		</ul>
+	</div>		
+
+<!--======================= sub-pág d1330: XBMC_MSGERRO ==========================-->
+  <div id="d1330" class="abs box1"></div>
+  <div id="aviso" class="abs fndPag y zix"></div>
+
+<!--============================== sinalizador refresh ===========================-->
+	<img id="d34" class="p0" src="img/blue_round_35x30.png" alt="">
+
+
+
+
+<!--################################################################ arcondPage ####################################################################-->
+
+
+
+
+
+<div id="arcondPage" class="fundoM">
+
+	<!--========================== Display  =======================-->
+	<div id="d1320" style="position:absolute;left:100px;top:65px;width:200px;height:200px;background-color:#CCC;font-family:Arial;color:white">
+		<div class="abs arcond" style="left:1px;top:1px;width:198px;height:198px"></div>
+		<pre class="f2" style="left:3px;top:0" id="s5112">Auto Cool Dry Fan Heat</pre>
+		<div class="abs" style="left:70px;top:49px;font-size:50px" id="s5110">20</div>
+		<div class="abs" style="left:128px;top:55px;font-size:25px">ºC</div>
+		<div class="f2 pl3" style="top:125px" id="s5114">Turbo off</div>	
+		<div class="f2 pl3" style="top:146px">Fan</div>
+		<div class="f2" style="left:55px;top:146px" id="s5111">0</div>
+		<div class="f2 pl3" style="top:167px">Swing</div>
+		<div class="f2" style="left:65px;top:167px" id="s5113">on</div>
+		<div class="abs" style="left:1px;top:1px;width:198px;height:198px;background-color:rgba(0,0,0,0.7)" id="d5115"></div>
+		<div class="ac_powerOn abs" style="left:125px;top:125px"></div>
+	<!--========================= botões ==========================-->
+		<div style="position:absolute;left:0px;top:199px;width:200px;height:255px;background-color:#CCC">
+			<div style="position:absolute;left:1px;top:1px;width:198px;height:253px" class="arcond"></div>
+			<div class="abs pl1" style="top:2px;width:60px"><div id="acTurbo" class="btnled">Turbo</div></div>
+			<div class="abs" style="left:138px;top:2px;width:60px"><div id="acLuz" class="btnled">Luz</div></div>
+			<div class="abs pl1" style="top:213px;width:60px"><div id="acSwing" class="btnled">Swing</div></div>
+	<!--===== navigation up/down/left/right ======-->
+			<div class="arrowup" style="left:32px;top:28px"><br><br><pre>ºC             +</pre></div>
+			<div class="arrowdo" style="left:33px;top:162px"><br><br><pre>ºC             --</pre></div>
+			<div class="arrowle pl1" style="top:58px"><br><br>FAN<br><br><br><br><br><br>--</div>
+			<div class="arrowri" style="left:137px;top:58px"><br><br>FAN<br><br><br><br><br><br>+</div>
+			<div class="btn_ok" style="left:56px;top:82px"><br><br><br>MODO</div>
+		</div>
+	</div>
+
+	<ul id="aclista" class="lista03 abs" style="left:50px;top:650px;width:700px;height:60px">
+	</ul>
+
+	<!--=============== botão "sair da página" (X) ============-->
+	<div id="arCondClose" class="xcancel" style="left:345px;top:540px"></div>
+</div>
+
+
+
+
+<!--################################################################## inoutPage ###################################################################-->
+
+
+
+
+<div id="inout" class="fundoM">
+<!--=================== lista de resposta/comando UDP/TCP ========================-->
+	<div style="position:absolute;left:5px;top:5px">
+		<div class="fndPag" style="width:385px;height:155px"></div>
+		<ul id="l60000" class="lista03" style="position:absolute;left:0;top:10px;width:380px;height:147px">
+		</ul>
+		<div style="position:absolute;left:298px;top:125px">
+			<div id="cmdClr" class="btn1">limpa</div>
+		</div>
+	</div>
+
+<!--================================= botões ====================================-->
+  <div style="position:absolute;left:5px;top:175px">
+	<div class="fndPag" style="width:385px;height:180px"></div>
+	<div style="position:absolute;left:15px;top:30px">
+		<div style="position:absolute;left:0px;top:-20px;width:100px">
+			<pre class="btnled" id="togle1Rfx"></pre><span id="ledTogle1" style="top:15px"></span>
+			<pre class="btnled" id="togle2Rfx"></pre><span id="ledTogle2" style="top:57px"></span>
+			<pre class="btnled" id="togle3Rfx"></pre><span id="ledTogle3" style="top:99px"></span>
+			<pre class="btnled" id="togle4Rfx"></pre><span id="ledTogle4" style="top:141px"></span>
+		</div>
+		<div style="position:absolute;left:110px;top:-20px;width:120px">
+			<pre id="rl1" class="btnled">    Relé 1<i style="font-size:20px" class="icon-megaphone"></i></pre><span id="d2001" style="top:7px"></span>
+			<pre id="rl2" class="btnled">    Relé 2<i style="font-size:20px" class="icon-lightbulb"></i></pre><span id="d2002" style="top:49px"></span>
+			<pre id="rl3" class="btnled">    Relé 3<i style="font-size:20px" class="icon-videocam"></i></pre><span id="d2003" style="top:91px"></span>
+			<pre id="rl4" class="btnled">Relé 4 </pre><span id="d2004" style="top:133px"></span>
+		</div>
+		<div style="position:absolute;left:240px;top:-20px;width:120px">
+			<pre id="rl5" class="btnled">Relé 5 </pre><span id="d2005" style="top:7px"></span>
+			<pre id="rl6" class="btnled">Relé 6 </pre><span id="d2006" style="top:49px"></span>
+			<pre id="rl7" class="btnled">Relé 7 </pre><span id="d2007" style="top:91px"></span>
+			<pre id="rl8" class="btnled">Relé 8 </pre><span id="d2008" style="top:133px"></span>
+		</div>
+	</div>
+  </div>
+
+<!--============================ entradas do RFX9600 ============================-->
+	<div style="position:absolute;left:5px;top:370px;width:120px">
+		<div class="fndPag" style="width:107px;height:90px"></div>
+		<div class="numEnt" style="position:absolute;left:20px;top:7px">1 2 3 4</div>
+		<div style="position:absolute;left:10px;top:35px">
+			<div  id="ledEnt1" class="led" style="left:10px"></div>
+			<div  id="ledEnt2" class="led" style="left:30px"></div>
+			<div  id="ledEnt3" class="led" style="left:50px"></div>
+			<div  id="ledEnt4" class="led" style="left:70px"></div>
+		</div>
+		<div style="position:absolute;left:10px;top:45px;width:90px">
+			<a href="#" class="btnled" id="statusEnt">input <i style="font-size:20px;color:white" class="icon-arrows-cw"></i></a>
+		</div>
+	</div>
+
+<!--========================== entradas do IP Control ===========================-->
+	<div style="position:absolute;left:125px;top:370px;width:120px">
+		<div class="fndPag" style="width:265px;height:90px"></div>
+		<div class="numEnt" style="position:absolute;left:22px;top:7px">1 2 3 4 5 6 7 8 9 0 1 2</div>
+		<div id="leds" style="position:absolute;left:13px;top:35px">
+		<!-- script abaixo -->
+		</div>
+		<div style="position:absolute;left:20px;top:45px;width:120px">
+			<a href="#" class="btnled" id="ipctrl_pooling">input <i style="font-size:20px;color:white" class="icon-spinner animate-spin"></i></a><span id="poolingLed"></span>
+		</div>
+		<div style="position:absolute;left:150px;top:45px;width:100px">
+			<a href="#" class="btnled" id="ipctrl_entradas">input <i style="font-size:20px;color:white" class="icon-arrows-cw"></i></a>
+		</div>
+		<div style="position:absolute;left:15px;top:107px;width:120px">
+			<div id="ioStatus" class="btnled">le status</div>
+			<div id="rfx" class="btnled w1" style="left:9px">rfx 1</div>
+		</div>
+	</div>
+<!--======================== botão "sair da página" (X) ==========================-->
+	<div id="inOutClose" class="xcancel abs" style="left:345px;top:530px"></div>
+
+</div>
+
+
+
+
+<!--#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	# loginPage #	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#-->
+
+
+
+
+<div id="login" class="fundoM">
+  <form name="form1" class="layer1 fndPag">
+	<div class="abs" style="left:20px;top:20px">Usuário</div>
+	<input class="lgn" style="top:20px" name="user" type="text" onBlur="submit.disabled=this.value==''" />
+	<div class="abs" style="left:20px;top:60px">Senha</div>
+	<input class="lgn" style="top:60px" name="pass" type="password"/>
+	<input class="abs" style="left:90px;top:110px;height:40px" name="enter" type="submit" onclick="return cp.checkPass(this.form)" value=" Entrar "/>
+  </form>
+	<div id="d1306" class="loadBars abs" style="left:137px;top:300px;"></div>
+</div>
+
+
+
+
+</div>
+</body>
+</html>
